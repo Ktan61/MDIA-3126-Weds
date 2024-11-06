@@ -1,0 +1,36 @@
+.container{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.characterContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.wood {
+    color: brown;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .container{ 
+        width: 70%;
+        align-items: center;
+        gap: 3rem;
+    }
+    .characterContainer {
+        flex-direction: column;
+        align-items: center;
+    }    
+    .wood {
+        color: rgb(158, 185, 161);
+    }
+}
